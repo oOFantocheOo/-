@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
+<title>JavaScript Example</title>
+
+<style type="text/css">
+
+#box {
+width: 50px;
+height: 50px;
+border: 1px solid;
+background-color: blue;
+}
+
+</style>
+
+
+
+<script type="text/javascript">
+<!-- 
+var count=0;
+function start()
+{
+	divObj=document.getElementById("box");
+	divObj.style.position="absolute";
+	divObj.style.left="10px";
+	divObj.style.top="10px";
+	move_it_right();
+}
+
+
+function move_it_right()
+{
+	left_offset=divObj.style.left;
+	left_offset=parseInt(left_offset); 
+	left_offset++;
+	left_offset+="px";
+	divObj.style.left = left_offset;
+	count++;
+	if(count==400)
+		return move_it_down();
+	else
+		setTimeout("move_it_right()",20);
+}
+
+function move_it_down()
+{
+	top_offset=divObj.style.top;
+	top_offset=parseInt(top_offset); 
+	top_offset++;
+	top_offset+="px";
+	divObj.style.top = top_offset;
+	count++;
+	if(count==800)
+		return move_it_left();
+	else
+		setTimeout("move_it_down()",20);
+}
+
+
+
+function move_it_left()
+{
+	left_offset=divObj.style.left;
+	left_offset=parseInt(left_offset); 
+	left_offset=left_offset-1;
+	left_offset+="px";
+	divObj.style.left = left_offset;
+	count++;
+	if(count==1200)
+		return move_it_up();
+	else
+		setTimeout("move_it_left()",20);
+}
+
+function move_it_up()
+{
+	top_offset=divObj.style.top;
+	top_offset=parseInt(top_offset); 
+	top_offset=top_offset-1;
+	top_offset+="px";
+	divObj.style.top = top_offset;
+	count++;
+	if(count==1600)
+		return;
+	else
+		setTimeout("move_it_up()",20);
+}
+//-->
+</script>
+
+</head>
+<body onload="start()"> 
+
+	<div id="box"></div>
+</body>
+
+</html>

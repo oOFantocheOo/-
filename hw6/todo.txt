@@ -1,0 +1,2 @@
+delete css and calendar.php
+copy .phps to .txts

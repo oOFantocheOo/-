@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
+<title>JavaScript Example</title>
+
+<style type="text/css">
+
+#box {
+position: fixed;
+top: 50%;
+left: 50%;
+margin:auto;
+height:0px;
+width:0px;
+padding:0px;
+border:0px;
+background-color:blue;
+}
+
+</style>
+
+
+
+<script type="text/javascript">
+<!-- 
+
+var	w=0;
+var	h=0;
+var count=0;
+function start()
+{
+	divObj=document.getElementById("box");
+	enlarge();
+}
+
+function enlarge()
+{
+	if(count>=200)
+	{
+		count=0;
+		narrow();
+	}
+	else
+	{
+		count++;
+		w++;
+		h++;
+		h+="px";
+		w+="px";
+		divObj.style.width=w;
+		divObj.style.height=h;
+		w=parseInt(w);
+		h=parseInt(h);
+		setTimeout("enlarge();",5);
+	}
+}
+
+
+function narrow()
+{
+	if(count>=200)
+	{
+		divObj.remove();
+		count=0;
+		return;
+	}
+	else
+	{
+		count++;
+		w-=1;
+		h-=1;
+		h+="px";
+		w+="px";
+		divObj.style.width=w;
+		divObj.style.height=h;
+		w=parseInt(w);
+		h=parseInt(h);
+		setTimeout("narrow();",5);
+	}
+	
+}
+//-->
+</script>
+
+</head>
+<body> 
+<p><input type="button" value="Start" onclick="start();"/></p>
+
+	<div id="box"></div>
+</body>
+
+</html>

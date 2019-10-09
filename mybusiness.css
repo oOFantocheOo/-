@@ -1,0 +1,146 @@
+#garbage{}
+
+p
+{
+	font-size:12pt;
+	font-family:Verdana;
+	display:block;
+}
+
+h1
+{
+	font-size:50pt;
+	font-weight:bold;
+}
+
+body
+{
+	background:#FFFFF0;
+}
+
+header 
+{
+	text-align:center;
+	width:800px;
+	height:100px;
+}
+
+
+#headerLogo
+{
+	width:800px;
+	text-align:center;
+	height:100px;
+}
+
+table, th, td
+{
+	background-color:#E0E0E0;
+    border: 1px solid black;
+}
+	
+div.dropDownMenu ul 
+{
+	margin-top:60px;
+}
+	
+div.dropDownMenu li
+{	
+	margin-left:0;
+	font-family:Verdana;
+	width:150px;
+	text-align:center;
+	list-style:none;
+	height:1em;
+	background-color:#AEEEEE;
+	float:left;
+	padding: 0.5em 15px;
+	font-style:italic;
+}
+
+div.dropDownMenu ul li ul
+{
+	display:none;
+	margin:0;
+	padding:0;
+}
+
+div.dropDownMenu ul li ul li
+{
+	font-family:Helvetica;
+	border:1px solid white;
+}
+
+div.dropDownMenu ul li:hover ul
+{ 
+	position:absolute;
+	display:block;
+}
+
+div.dropDownMenu ul li:hover li
+{ 
+	float:none;
+}
+
+div.dropDownMenu ul li li:hover
+{
+	background-color:#8DB6CD;
+}
+
+#mainMenu
+{
+	font-size:15pt;
+}
+
+#mainMenu ul
+{
+	font-size:10pt;
+}
+
+#mainContent
+{
+	padding:20px;
+	background-color:#F0FFF0;
+	margin:auto;
+	width:800px;
+}
+
+#sidebar
+{
+	margin:10px;
+	background:#FFD39B;
+	font-family:Arial;
+	float:right;
+	width:200px;
+	margin:10px;
+}
+
+#myPhoto
+{
+	float:right;
+}
+
+input[type=text] 
+{
+    border: 3px solid green;
+    border-radius: 4px;
+}
+
+#footer
+{
+
+	text-align:center;
+	height:50px;
+	clear:both;
+	background:#00D39B;
+}
+
+#style2
+{
+	list-style:circle;
+}
+
+#style1
+{
+	list-style:square;
+}
